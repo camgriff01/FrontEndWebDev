@@ -1,0 +1,9 @@
+nav {
+  display: flex;
+  flex-direction: column;
+  padding: 2px;
+}
+#MenuToggler{
+  font-size: 40px;
+  padding-left: 7px;
+}
