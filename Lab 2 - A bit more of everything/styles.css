@@ -1,29 +1,80 @@
+body{
+  margin: 0.5em 1em;
+  font-family: sans-serif;
+  color: #222;
+}
 nav {
   display: flex;
-  background-color: blue;
-  width: 15vw;
-  flex-direction: column;
-  order: 2;
+  justify-content: flex-end;
+  font-size: 0.9em;
 }
 nav a {
-  background-color: red;
-  color: purple;
-  padding: 5px;
-  margin: 10px;
-  transition: background-color 0.1s;
-  flex-shrink: 0;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  color: #F9F;
 }
-nav a:hover {
-  background-color: white;
+nav a:last-child{
+  color: white;
+  border-radius: 25px;
+  background-color: #F9F;  
 }
-header, main {
-  overflow: auto;
+nav a:hover{
+  transition-duration: 0.33s;
+  text-decoration: underline;
+  background-color: #F9F;
+  border-radius: 25px;
+  color: white;
 }
-section {
-  width: 85vw;
-  box-sizing: border-box;
-  overflow: auto;
+header {
+  margin-top: 6em;
+  text-align: center;
+  margin-bottom: 3.5em;
 }
-main {
+img {
+  border-radius: 50%;
+}
+
+h1{
+  font-size: 2.5em;
+  margin-bottom: 0;
+}
+h2 {
+  font-size: 1em;
+  color: #999;
+  font-weight: normal;
+  margin: 0;
+}
+h3{
+  margin: 0;
+  font-weight: normal;
+}
+em {
+  color: #3C8;
+  font-style: normal;
+}
+main, footer{
+  margin: 0 auto;
+  max-width: 550px;
+}
+main{
+  border-style: solid;
+  border-color: #CCC;
+  border-width: 0.5px 0px;
+  padding-top: 2em;
+}
+article{
+  margin: 3em 0;
   display: flex;
+  align-items: flex-start;
+}
+section{
+  margin-left: 2em;
+}
+p{
+  line-height: 1.6em;
+}
+footer{
+  color: #CCC;
+  padding: 4em 0;
+  font-size: 0.8em;
 }
